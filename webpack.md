@@ -25,47 +25,45 @@
 
 ### 创建package.json文件,可以新建也可以使用命令
 
+`npm init`
 
-    `npm init`
+使用命令的情况下会让你输入信息，然后生成文件
 
+package.json 基本内容 如下
 
-    使用命令的情况下会让你输入信息，然后生成文件
-
-    package.json 基本内容 如下
-
-    ```
-    {
-        "name": "project name",
-        "version": "1.0.0",
-        "description": "project description",
-        "scripts": {
-            
-        },
-        "author": "author",
-        "license": "MIT",
-        "dependencies": {
-
-        },
-        "devDependencies": {
-            "webpack": "^2.2.1"
-        }
-        
-    }
-    ```
-
-    scripts 内容的含义用如下的例子来说明
-
-    ```
+```
+{
+    "name": "project name",
+    "version": "1.0.0",
+    "description": "project description",
     "scripts": {
-        "dev": "node build/dev-server.js",
+        
     },
-    ```
+    "author": "author",
+    "license": "MIT",
+    "dependencies": {
+
+    },
+    "devDependencies": {
+        "webpack": "^2.2.1"
+    }
     
-    在终端中输入` npm run dev ` 等同于 `node build/dev-server.js `
+}
+```
 
-    dependencies 是模块列表，以 -save 安装
+scripts 内容的含义用如下的例子来说明
 
-    devDependencies 是模块列表，以 -save-dev 安装
+```
+"scripts": {
+    "dev": "node build/dev-server.js",
+},
+```
+
+在终端中输入` npm run dev ` 等同于 `node build/dev-server.js `
+
+dependencies 是模块列表，以 -save 安装
+
+devDependencies 是模块列表，以 -save-dev 安装
 
 > 使用npm run的方便之处在于，npm会自动把node_modules/.bin加入$PATH，这样你可以直接运行依赖程序和开发依赖程序，不用全局安装了
 
