@@ -7,6 +7,7 @@
 ## 前提
 
 * Node.js
+
 > npm 是 Node自带的包管理工具
 
 ## 安装
@@ -60,7 +61,7 @@
     dependencies 是模块列表，以 -save 安装
 
     devDependencies 是模块列表，以 -save-dev 安装
-    
+
 > 使用npm run的方便之处在于，npm会自动把node_modules/.bin加入$PATH，这样你可以直接运行依赖程序和开发依赖程序，不用全局安装了
 
 > 小技巧 : 可以在package.json文件中输入需要的模块，使用`npm install` 一次安装所有模块
