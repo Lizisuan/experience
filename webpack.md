@@ -22,9 +22,12 @@
 
 ## 配置
 
+
 ### 创建package.json文件,可以新建也可以使用命令
 
+
     `npm init`
+
 
     使用命令的情况下会让你输入信息，然后生成文件
 
@@ -49,6 +52,7 @@
         
     }
     ```
+
     scripts 内容的含义用如下的例子来说明
 
     ```
@@ -56,6 +60,7 @@
         "dev": "node build/dev-server.js",
     },
     ```
+    
     在终端中输入` npm run dev ` 等同于 `node build/dev-server.js `
 
     dependencies 是模块列表，以 -save 安装
