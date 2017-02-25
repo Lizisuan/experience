@@ -137,6 +137,14 @@ module.exports = {
 
 ···
 
+## loader
+
+1. sass-loader
+
+sass-loader 安装会遇到各种各样的问题，建议采用淘宝的镜像安装
+
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+    cnpm install --save-dev node-sass
 
 
 
