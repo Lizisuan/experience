@@ -1,23 +1,33 @@
 # CSS 
 
+## 目录
+
+- [点击事件](#pointer-events)
+- [默认菜单](#-webkit-touch-callout)
+- [inline-block](#inline-block)
+- [移动端 reset.css](#mobile-reset)
+
 ### pointer-events
 
 * none , 元素捕获不到任何点击事件,事件会穿透到元素的下层
 * auto , 事件不会穿透到下层
 
-### -webkit-touch-callout(不规范属性)
+### -webkit-touch-callout
+
+> 不规范属性
 
 * none , 系统默认菜单被禁用
 * default , 系统默认菜单不被禁用
 
-### inline-block(间隙)
+### inline-block
 
 起因: 在于 html 两个 inline-block 元素之间存在空格
 
-解决: 一般父元素用  font-size:0 即可解决问题, 但是iphone 6 plus 中还是会存在空格, 根本方法就是在html中直接用注释或者不换行去掉空格
+解决: 一般父元素用  font-size:0 即可解决问题, 
+      但是iphone 6 plus input 应用还是会存在空格, 根本方法就是在html中直接用注释或者不换行去掉空格
 
 
-### 移动端 reset
+### mobile-reset
 
 
     html{
