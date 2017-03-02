@@ -1,4 +1,4 @@
-# Javascript（持续更新）
+# Javascript
 
 ### RegExp 对象
 
